@@ -1,0 +1,11 @@
+body{
+    display: block;
+    width: 100%;
+    background: rgb(240, 231, 219);
+}
+.main{
+    width: auto;
+    height: auto;
+    margin: 0 300px;
+    padding: 0 16px;
+}
