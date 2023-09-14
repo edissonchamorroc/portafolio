@@ -20,9 +20,9 @@ export class Robot3dComponent {
 
   ngOnInit(): void {
     const scene2 = this.scene;
-    this.scene.background = new THREE.Color( '#ffffff' );
+    this.scene.background = new THREE.Color( '#f0e7db' );
     this.camera.position.z = 1000;
-    this.camera.position.set(0,2,4)
+    this.camera.position.set(0,3,5)
  
     const light = new THREE.DirectionalLight(0xffffff, 1);
     light.position.set(0, 3, 1);
@@ -39,6 +39,7 @@ export class Robot3dComponent {
 
   animate() {
     window.requestAnimationFrame(() => this.animate());
+    this.controls.autoRotate=true;
     this.controls.update();
     this.renderer.render(this.scene, this.camera);
     

@@ -8,6 +8,8 @@ nav {
     display: flex;
     justify-content: center;
     z-index: 2;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    backdrop-filter: blur(10px);
 }
 
 .nav-container {
@@ -25,6 +27,7 @@ nav {
 
 .nav-container p {
     font-size: 18px;
+    font-weight: bolder;
 }
 
 #name-container {
