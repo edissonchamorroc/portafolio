@@ -22,10 +22,10 @@ export class Robot3dComponent {
     const scene2 = this.scene;
     this.scene.background = new THREE.Color( '#f0e7db' );
     this.camera.position.z = 1000;
-    this.camera.position.set(0,3,5)
+    this.camera.position.set(0,3,6)
  
-    const light = new THREE.DirectionalLight(0xffffff, 1);
-    light.position.set(0, 3, 1);
+    const light = new THREE.DirectionalLight(0xffffff, 4);
+    light.position.set(1, 4, 1);
     scene2.add(light)
 
     this.loader.load('https://edissonchamorroc.github.io/portafolio/assets/robot/walle.glb', function (glb: GLTF) {
