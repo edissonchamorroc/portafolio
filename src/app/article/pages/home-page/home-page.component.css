@@ -61,3 +61,30 @@
     font-weight: bold;
     margin-right: 1em;
 }
+
+@media (max-width: 770px) {
+
+    #title h2{
+        font-size: 30px;
+    }
+    #title p{
+        font-size: 15px;
+    }
+    #margin {
+        margin: 0 5%;
+    }
+    .article-experience{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 670px) {
+
+    .article-experience span{
+        font-size: 13px;
+    }
+    .article-experience{
+        font-size: 14px;
+    }
+}
+
