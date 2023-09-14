@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
 import { Robot3dComponent } from './shared/components/robot3d/robot3d.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    Robot3dComponent
+    Robot3dComponent,
   ],
   imports: [
     BrowserModule,

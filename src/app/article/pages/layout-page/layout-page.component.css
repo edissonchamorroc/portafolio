@@ -1,0 +1,12 @@
+#main-article{
+    position: relative;
+    opacity: 1;
+    transform: none;
+    background: #f0e7db
+
+}
+.article-container{
+    margin: 0 109px;
+    padding: 0 16px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}

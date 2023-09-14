@@ -1,11 +1,18 @@
-body{
+body {
     display: block;
     width: 100%;
-    background: rgb(240, 231, 219);
+    height: 100%;
+    background: #f0e7db;
 }
-.main{
+#margin{
     width: auto;
-    height: auto;
+    height: 100%;
     margin: 0 300px;
     padding: 0 16px;
+    padding-bottom:2rem;
+}
+.main {
+    width: auto;
+    height: auto;
+    background: #f0e7db;
 }
