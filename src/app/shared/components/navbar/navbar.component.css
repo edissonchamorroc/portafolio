@@ -18,6 +18,7 @@ nav {
     justify-content: space-between;
     width: auto;
     height: 100%;
+    padding: 8px;
 }
 
 .nav-container a {
@@ -28,12 +29,14 @@ nav {
 .nav-container p {
     font-size: 18px;
     font-weight: bolder;
+   
 }
 
 #name-container {
     width: auto;
     height: 100%;
     margin-right: 20px;
+    
 }
 
 #name-container h1 {
@@ -42,7 +45,10 @@ nav {
     height: 100%;
 
 }
-
+#name-container p{
+    padding: 3px;
+    
+}
 .nav-link {
     margin: 0;
     width: 100%;
@@ -97,4 +103,24 @@ nav {
 
 .night-theme_content {
     background: rgb(32, 32, 35);
+}
+
+@media (max-width: 600px) {
+
+    .nav-container{
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+
+    }
+    #theme-container{
+        margin-left: 100px;
+    }
+
+}
+@media (max-width: 400px) {
+
+    #name-container p{
+        display: none;
+    }
+
 }

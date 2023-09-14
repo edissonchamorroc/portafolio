@@ -4,15 +4,56 @@ body {
     height: 100%;
     background: #f0e7db;
 }
-#margin{
+
+#margin {
     width: auto;
     height: 100%;
-    margin: 0 300px;
+    margin: 0 23%;
     padding: 0 16px;
-    padding-bottom:2rem;
+    padding-bottom: 2rem;
 }
+
 .main {
     width: auto;
     height: auto;
     background: #f0e7db;
+}
+
+@media (max-width: 1300px) {
+
+    #margin {
+        margin: 0 15%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    #margin {
+        margin: 0 10%;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    #margin {
+        margin: 0 5%;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    #margin {
+        margin: 0 ;
+    }
+
+}
+@media (max-width: 623px) {
+
+    .main{
+        overflow: hidden;
+    }
+ 
 }
