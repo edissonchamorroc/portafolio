@@ -28,7 +28,7 @@ export class Robot3dComponent {
     light.position.set(0, 3, 1);
     scene2.add(light)
 
-    this.loader.load('../../../assets/robot/walle.glb', function (glb: GLTF) {
+    this.loader.load('../assets/robot/walle.glb', function (glb: GLTF) {
       const root = glb.scene;
       console.log(root)
       root.scale.set(1, 1, 1);
