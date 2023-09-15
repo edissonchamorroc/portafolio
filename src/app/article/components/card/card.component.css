@@ -1,0 +1,29 @@
+.card-container{
+    margin-bottom: 24px;
+    text-align: center;
+}
+.card-container a{
+    background-color: transparent;
+    color: inherit;
+    -webkit-text-decoration: inherit;
+    text-decoration: inherit;
+}
+.card-link img{
+    max-width:100%;
+    height: auto;
+    border-radius: 12px;
+
+}
+.card-container p{
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-name p{
+    font-size: 20px;
+    margin-top: 8px;
+    font-weight: 300;
+    
+}
+.card-desc{
+    font-size: 12px;
+}

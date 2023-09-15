@@ -1,0 +1,10 @@
+
+<div class="card-container">
+    <a class="card-link" [routerLink]="work.id">
+        <img [alt]="work.name" [src]="work | WorkImage">
+        <div class="card-name">
+            <p>{{work.name}}</p>
+        </div>
+        <p class="card-desc">{{work.desc | slice:0:50}}</p>
+    </a>
+</div>
