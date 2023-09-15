@@ -1,0 +1,15 @@
+<h3>En la Web</h3>
+<ul>
+    <li *ngFor="let link of links">
+        <a target="_blank" class="chakra-link css-1oyctpo" href="{{link.url}}">
+            <button type="button" class="link-button">
+                <span><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                        aria-hidden="true" focusable="false" height="1em" width="1em"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path *ngFor="let path of link.icon" [attr.d]="path"></path>
+                    </svg>
+                </span>{{link.name}}
+            </button>
+        </a>
+    </li>
+</ul>

@@ -9,7 +9,8 @@ import * as oc from 'three/examples/jsm/controls/OrbitControls';
   styleUrls: ['./robot3d.component.css']
 })
 export class Robot3dComponent {
-
+  //el trabajo que hay que realizar aqui es organizar codigo 
+  //agregar sobra
   @ViewChild('rendererContainer') rendererContainer?: ElementRef;
 
   private renderer = new THREE.WebGLRenderer();

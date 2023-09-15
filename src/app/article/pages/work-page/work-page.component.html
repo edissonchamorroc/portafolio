@@ -1,1 +1,24 @@
-<p>work-page works!</p>
+<div class="work-container">
+    <a [routerLink]="['/works']">
+        <p>Regresar</p>
+    </a>
+    <h3>{{work!.name}}</h3>
+    <p> {{work!.desc}}</p>
+    <ul>
+        <li *ngIf="work?.url">
+            <span>WEBSITE </span>
+            <a [href]="work!.url" target="_blank">
+                <p>{{ work!.name}}</p>
+            </a>
+        </li>
+        <li>
+            <span>PLATAFORMAS</span>
+            <P>Windows/macOS/Linux/iOS/Android</P>
+        </li>
+        <li>
+            <span>STACK</span>
+            <P>{{work!.stack}}</P>
+        </li>
+    </ul>
+    <img [src]="work! | WorkImage" [alt]="work?.id">
+</div>
