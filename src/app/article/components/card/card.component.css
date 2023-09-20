@@ -1,35 +1,49 @@
-.card-container{
+.card-container {
     margin-bottom: 24px;
     text-align: center;
 }
-.card-container a{
+
+.card-container a {
     background-color: transparent;
     color: inherit;
     -webkit-text-decoration: inherit;
     text-decoration: inherit;
 }
-.card-link img{
-    max-width:100%;
+
+.card-link img {
+    max-width: 100%;
     height: 200px;
     border-radius: 12px;
     object-fit: cover;
 
 }
 
-.card-link img:hover{
+.card-link img:hover {
     object-fit: scale-down;
 
 }
-.card-container p{
+
+.card-container p {
     margin: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.card-name p{
+
+.card-name p {
     font-size: 20px;
     margin-top: 8px;
     font-weight: 300;
-    
+
 }
-.card-desc{
+
+.card-desc {
     font-size: 12px;
+}
+
+@media (max-width: 370px) {
+
+    .card-name p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
 }

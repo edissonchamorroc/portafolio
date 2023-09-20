@@ -1,12 +1,15 @@
 import { Injectable } from '@angular/core';
 import { work } from '../interfaces/work.interface';
 import { experience } from '../interfaces/experience.interface';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 
 
 export class ArticleService {
 
+    private myVariableSubject = new BehaviorSubject<boolean>(false);
+    
     private works: work[] = [
         {
             id: 'seguros',
@@ -34,7 +37,7 @@ export class ArticleService {
         },
         {
             id: 'Contabilidad',
-            name: 'Contabilidad empresarial',
+            name: 'Contabilidad',
             img:'https://user-images.githubusercontent.com/71468355/219412819-6746f050-21be-41e7-b855-b7ad61c9ab3b.png',
             desc: 'Proyecto personal en el cual se construyó una aplicación web monolítica buscando gestionar de manera básica la contabilidad de una empresa. En este proyecto se pretende mostrar el buen uso de los principios de código limpio. Se realizarón pruebas unitarias y de integración',
             url: 'https://github.com/edissonchamorroc/Contabilidad-basica-empresarial',
@@ -52,7 +55,7 @@ export class ArticleService {
         },
         {
             id: 'storeimg',
-            name: 'Restapi Sesiones concurrentes',
+            name: 'Store image',
             img:'https://user-images.githubusercontent.com/71468355/217281443-2414460e-7787-4976-8d6a-104efa19019c.png',
             desc: 'El proyecto consiste de un apartado web en donde se pueden subir imagenes a través de la funcionalidad drag and drop, o a través del sistema de buscar en el sistema de archivos, con el fin de almacenar dicho fichero en base de datos.',
             url: 'https://github.com/edissonchamorroc/StorageImage-MVC',
@@ -69,7 +72,7 @@ export class ArticleService {
         },
         {
             id: 'theory',
-            name: 'PACMAN',
+            name: 'Theory B',
             desc: 'El video juego consiste en Mr Traveller, el cual va atravesando una serie de obstaculos hasta llegar a la meta. La razon por la que el Mr Traveller está en constante huida es debido a que el tiempo se le va a acabando y para poder sobrevivir deberá llegar a la meta a tiempo. En cuanto la manera de defenderse de los enemigos u obstaculos, contará con la funcionalidad de lanzar bombas.',
             url: 'https://github.com/edissonchamorroc/Theory_B',
             stack: 'C++/QTGraphics',
@@ -101,6 +104,14 @@ export class ArticleService {
         if (id == null || id == undefined) return;
 
         return this.works.find(work => work.id == id);
+    }
+
+    get flagBlackTheme(): BehaviorSubject<boolean>{
+        return this.myVariableSubject;
+    }
+
+    setflagBlackTheme(value:boolean){
+        this.myVariableSubject.next(value);
     }
 
     

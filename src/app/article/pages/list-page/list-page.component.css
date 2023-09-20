@@ -1,4 +1,4 @@
-h3{
+h3 {
     font-size: 20px;
     font-weight: 600;
     text-decoration: underline;
@@ -7,23 +7,26 @@ h3{
     text-decoration-thickness: 4px;
     margin: 12px 0 30px 0;
 }
-.card{
+
+.card {
     display: grid;
     grid-template-columns: repeat(2, minmax(0px, 1fr));
     gap: 20px;
     background: transparent;
     border: none;
 }
-a{
+
+#lnk-back {
     color: #3d7aed;
     text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
     display: none;
- }
+}
 
- @media (max-width: 400px) {
+@media (max-width: 400px) {
 
-    a{
-     display: inline;
+    #lnk-back {
+        display: inline;
     }
- }
- 
+}
