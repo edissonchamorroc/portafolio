@@ -46,9 +46,9 @@ export class ArticleService {
         },
         {
             id: 'sesiones',
-            name: 'Restapi Sesiones concurrentes',
+            name: 'Sesiones concurrentes',
             img:'https://user-images.githubusercontent.com/71468355/224379055-d0cb1248-9b59-4521-a71d-76450a6a9b9a.png',
-            desc: 'Actualmente muchas aplicaciones, como los portales transaccionales, presentan vulnerabilidad de multiple sesiones generadas a través de diferentes dispositivos como laptos, celular, etc. Es por ello que se propone como solución la construcción de una API la cual se encargue de manejar las sesiones concurrentes.',
+            desc: 'Actualmente muchas aplicaciones, como los portales transaccionales, presentan vulnerabilidad de multiple sesiones generadas a través de diferentes dispositivos como laptos, celular, etc. Es por ello que se propone como solución la construcción de una API Rest, la cual se encargue de manejar las sesiones concurrentes.',
             url: 'https://github.com/edissonchamorroc/RestApi-sesiones',
             stack: 'Java 1.8/Spring boot 2.7.9/Spring web/Spring Data/postgre/JUnit 5/Mockito',
             plataformas:'Windows/macOS/Linux'
@@ -82,7 +82,7 @@ export class ArticleService {
 
     private experiences: experience[] =[
         {year:'ene/2023 - Actualmente', description:'Tuya Vulnerabilidades'},
-        {year:'feb/2021 - ene/2023', description:'Tuya Web'},
+        {year:'feb/2022 - ene/2023', description:'Tuya Web'},
         {year:'oct/2021 - feb/2022', description:'Bootcamp fullstack- Sophos Solutions'},
         
       ];
