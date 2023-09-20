@@ -1,8 +1,8 @@
-<div class="main">
+<div class="main" id="main">
     <div id="margin">
-        <shared-navbar />
-        <shared-robot3d />
-        <router-outlet></router-outlet>
+        <shared-navbar (backgroundChange)="backgroundChange($event)"/>
+        <shared-robot3d [backTheme]="backTheme"/>
+        <router-outlet ></router-outlet>
     </div>
 
 </div>

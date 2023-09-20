@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { experience } from '../../interfaces/experience.interface';
+import { ArticleService } from '../../services/article.service';
 
 @Component({
   selector: 'div-experience',
@@ -8,9 +9,11 @@ import { experience } from '../../interfaces/experience.interface';
 })
 export class DivExperienceComponent {
 
-  public experiences: experience[] =[
-    {year:'oct/2021 - feb/2022', description:'Bootcamp fullstack- Sophos Solutions'},
-    {year:'feb/2021 - ene/2023', description:'Tuya Web'},
-    {year:'ene/2023 - Actualmente', description:'Tuya Vulnerabilidades'}
-  ];
+  public experiences?: experience[] = this.articleService.getExperiences;
+
+  constructor(
+    private articleService:ArticleService
+  ){}
+
+ 
 }

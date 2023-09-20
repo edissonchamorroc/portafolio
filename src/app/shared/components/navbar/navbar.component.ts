@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'shared-navbar',
@@ -7,14 +7,22 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  @Output()
+  public backgroundChange: EventEmitter<string> = new EventEmitter<string>();
+
+  public txtToggle: string = "night-theme";
+
   public isShowDiv: boolean = false;
 
   toggleTheme(): void {
-    this.isShowDiv = !this.isShowDiv;
-    const element = document.getElementById("main-navbar");
-    element!.classList.toggle("night-theme_button");
 
-    const body = document.getElementsByName('body');
-    
+    this.isShowDiv = !this.isShowDiv;
+
+    const element = document.getElementById("main-navbar");
+
+    element!.classList.toggle(this.txtToggle);
+
+    this.backgroundChange.emit(this.txtToggle);
+
   }
 }
