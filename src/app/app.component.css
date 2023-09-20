@@ -11,14 +11,20 @@ body {
     margin: 0 23%;
     padding: 0 16px;
     padding-bottom: 2rem;
+    background: transparent;
 }
 
 .main {
     width: auto;
     height: auto;
     background:#f0e7db;
+    
 }
 
+.night-theme{
+    background: #202023 !important;
+    color: #EDEDEE !important;
+}
 
 
 @media (max-width: 1300px) {

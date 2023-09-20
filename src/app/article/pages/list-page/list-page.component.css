@@ -14,3 +14,16 @@ h3{
     background: transparent;
     border: none;
 }
+a{
+    color: #3d7aed;
+    text-decoration: none;
+    display: none;
+ }
+
+ @media (max-width: 400px) {
+
+    a{
+     display: inline;
+    }
+ }
+ 

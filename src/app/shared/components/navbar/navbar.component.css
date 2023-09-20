@@ -10,6 +10,7 @@ nav {
     z-index: 2;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     backdrop-filter: blur(10px);
+   
 }
 
 .nav-container {
@@ -23,7 +24,6 @@ nav {
 
 .nav-container a {
     text-decoration: none;
-    color: #1a202c;
 }
 
 .nav-container p {
@@ -71,6 +71,9 @@ nav {
 .nav-link p {
     margin: 0;
     padding-top: 8px;
+    font-size: 19px;
+    font-weight: bolder;
+    font-style: italic;
 }
 
 /* Estilos para div theme container*/
@@ -94,12 +97,8 @@ nav {
 }
 
 /* Estilos para modo noche*/
-.night-theme_button {
-    background-color: #20202380 !important;
-}
-
-.night-theme_content {
-    background: rgb(32, 32, 35);
+.night-theme{
+    background: #20202380 !important;
 }
 
 /* Estilos responsive*/

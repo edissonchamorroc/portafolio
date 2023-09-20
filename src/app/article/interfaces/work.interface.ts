@@ -6,4 +6,5 @@ export interface work{
     desc:string;
     url?:string;
     stack:string;
+    plataformas:string;
 }
