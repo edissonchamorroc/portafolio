@@ -40,5 +40,18 @@ span{
 }
 a{
    color: #3d7aed;
+   font-style: italic;
    text-decoration: none;
+}
+
+@media (max-width: 526px) {
+
+    li{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 12px;
+    }
+    #table p{
+        font-size: 13px;
+    }
 }

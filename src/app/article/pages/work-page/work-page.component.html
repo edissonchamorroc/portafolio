@@ -4,7 +4,7 @@
     </a>
     <h3>{{work!.name}}</h3>
     <p> {{work!.desc}}</p>
-    <ul>
+    <ul id="table">
         <li *ngIf="work?.url">
             <span>WEBSITE </span>
             <a [href]="work!.url" target="_blank">
