@@ -60,15 +60,21 @@ p{
 
 @media (max-width: 770px) {
 
+    #title{
+        flex-direction: column;
+    }
     #title h2 {
         font-size: 30px;
     }
 
     #title p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #margin {
         margin: 0 5%;
+    }
+    #name{
+        margin-right: 5px;
     }
 }
