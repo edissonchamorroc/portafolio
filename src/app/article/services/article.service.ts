@@ -41,7 +41,7 @@ export class ArticleService {
             img:'https://user-images.githubusercontent.com/71468355/219412819-6746f050-21be-41e7-b855-b7ad61c9ab3b.png',
             desc: 'Proyecto personal en el cual se construyó una aplicación web monolítica buscando gestionar de manera básica la contabilidad de una empresa. En este proyecto se pretende mostrar el buen uso de los principios de código limpio. Se realizarón pruebas unitarias y de integración',
             url: 'https://github.com/edissonchamorroc/Contabilidad-basica-empresarial',
-            stack: 'Java 1.8/Spring Web/Spring JPA/Spring Security/Postgre',
+            stack: 'Spring Web/Spring JPA/Spring Security/Postgre',
             plataformas:'Windows/macOS/Linux'
         },
         {
@@ -50,7 +50,7 @@ export class ArticleService {
             img:'https://user-images.githubusercontent.com/71468355/224379055-d0cb1248-9b59-4521-a71d-76450a6a9b9a.png',
             desc: 'Actualmente muchas aplicaciones, como los portales transaccionales, presentan vulnerabilidad de multiple sesiones generadas a través de diferentes dispositivos como laptos, celular, etc. Es por ello que se propone como solución la construcción de una API Rest, la cual se encargue de manejar las sesiones concurrentes.',
             url: 'https://github.com/edissonchamorroc/RestApi-sesiones',
-            stack: 'Java 1.8/Spring boot 2.7.9/Spring web/Spring Data/postgre/JUnit 5/Mockito',
+            stack: 'Spring boot 2.7.9/Spring web/Spring Data/postgre/JUnit 5/Mockito',
             plataformas:'Windows/macOS/Linux'
         },
         {
@@ -59,7 +59,7 @@ export class ArticleService {
             img:'https://user-images.githubusercontent.com/71468355/217281443-2414460e-7787-4976-8d6a-104efa19019c.png',
             desc: 'El proyecto consiste de un apartado web en donde se pueden subir imagenes a través de la funcionalidad drag and drop, o a través del sistema de buscar en el sistema de archivos, con el fin de almacenar dicho fichero en base de datos.',
             url: 'https://github.com/edissonchamorroc/StorageImage-MVC',
-            stack: 'Java 1.8/Spring boot 2.7.8/Spring web/Spring Data/postgre',
+            stack: 'Spring boot 2.7.8/Spring web/Spring Data/postgre',
             plataformas:'Windows/macOS/Linux'
         },
         {

@@ -30,7 +30,7 @@ export class Robot3dComponent implements OnChanges {
     light.position.set(1, 4, 1);
     scene2.add(light)
 
-    this.loader.load('https://edissonchamorroc.github.io/portafolio/assets/robot/walle.glb', function (glb: GLTF) {
+    this.loader.load('/assets/robot/walle.glb', function (glb: GLTF) {
       const root = glb.scene;
       root.scale.set(1, 1, 1);
       scene2.add(root)
