@@ -1,12 +1,12 @@
 <div class="work-container">
-    <a [routerLink]="['/works']">
+    <a [routerLink]="['/works']" id="back">
         <p>Regresar</p>
     </a>
     <h3>{{work!.name}}</h3>
     <p> {{work!.desc}}</p>
     <ul id="table">
         <li *ngIf="work?.url">
-            <span>WEBSITE </span>
+            <span>LINK </span>
             <a [href]="work!.url" target="_blank">
                 <p>{{ work!.name}}</p>
             </a>

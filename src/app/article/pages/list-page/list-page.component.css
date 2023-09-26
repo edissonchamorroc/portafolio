@@ -1,6 +1,7 @@
 h3 {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-color: #525252;
@@ -14,12 +15,12 @@ h3 {
     gap: 20px;
     background: transparent;
     border: none;
+    
 }
 
 #lnk-back {
     color: #3d7aed;
     text-decoration: none;
-    font-weight: bold;
     font-style: italic;
     display: none;
 }

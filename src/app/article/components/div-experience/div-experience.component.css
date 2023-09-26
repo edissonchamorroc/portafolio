@@ -1,18 +1,18 @@
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .article-experience{
     padding-left: 3.4em;
     text-indent: -3.4em;
 }
 .article-experience span{
-    font-weight: bold;
+    font-weight: 600;
     margin-right: 1em;
 
 }
 h3{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline;
     text-underline-offset: 6px;
     text-decoration-color: #525252;
