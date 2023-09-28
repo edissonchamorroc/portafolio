@@ -25,4 +25,12 @@ export class NavbarComponent {
     this.backgroundChange.emit(this.txtToggle);
 
   }
+
+  toggleMenu():void{
+
+    const element = document.getElementById("hamburger-menu");
+
+    element!.classList.toggle("show");
+
+  }
 }
