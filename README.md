@@ -14,19 +14,19 @@
 ```
 $PROJECT_ROOT
 │   # Desarrollo de las vistas
-|------ Article
-|--------- Components
-|--------- Interfaces
-|--------- Pages
-|--------- Pipe
-|--------- Services
+|────── Article
+|──────── Components
+|──────── Interfaces
+|──────── Pages
+|──────── Pipe
+|──────── Services
 |   # Componentes compartidos
-|------ shared
-|--------- Navbar
-|--------- robot3d
+|────── shared
+|──────── Navbar
+|──────── robot3d
 |   # Archivos estaticos para modelos 3D
-|------ assets
-|--------- imgs
-|--------- robot
+|────── assets
+|──────── imgs
+|──────── robot
 ```
 
