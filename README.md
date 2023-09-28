@@ -16,7 +16,7 @@ $PROJECT_ROOT
 â”‚   # Desarrollo de las vistas
 â”œâ”€â”€ Article
 â”‚   # Componentes compartidos
-â”œâ”€â”€ components
+â”œâ”€â”€ shared
 â”‚   # shared
 â”œâ”€â”€ lib
 â”‚   # Archivos estaticos para modelos 3D
