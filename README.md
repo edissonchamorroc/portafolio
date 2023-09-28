@@ -13,13 +13,20 @@
 
 ```
 $PROJECT_ROOT
-â”‚   # Desarrollo de las vistas
-â”œâ”€â”€ Article
-â”‚   # Componentes compartidos
-â”œâ”€â”€ shared
-â”‚   # shared
-â”œâ”€â”€ lib
-â”‚   # Archivos estaticos para modelos 3D
-â””â”€â”€ assets
+│   # Desarrollo de las vistas
+|------ Article
+|--------- Components
+|--------- Interfaces
+|--------- Pages
+|--------- Pipe
+|--------- Services
+|   # Componentes compartidos
+|------ shared
+|--------- Navbar
+|--------- robot3d
+|   # Archivos estaticos para modelos 3D
+|------ assets
+|--------- imgs
+|--------- robot
 ```
 
