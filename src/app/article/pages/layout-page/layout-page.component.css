@@ -21,11 +21,13 @@
 
 }
 
-
 @media (max-width: 670px) {
 
     .article-container{
         margin: 0 5%;
+     
     }
 
 }
+
+

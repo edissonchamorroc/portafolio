@@ -14,7 +14,8 @@ span {
     font-size: 15px;
     margin: 0;
 }
-p{
+
+p {
     text-align: justify;
 }
 
@@ -28,33 +29,42 @@ ul {
     list-style-type: none;
     margin: 10px 0 30px 0;
 }
-li{
+
+li {
     display: flex;
     align-items: center;
 }
-span{
-    color:#22543d;
+
+span {
+    color: #22543d;
     font-weight: bold;
     padding: 0 4px;
     margin-right: 8px;
 }
-a{
-   color: #3d7aed;
-   font-style: italic;
-   text-decoration: none;
+
+a {
+    color: #3d7aed;
+    font-style: italic;
+    text-decoration: none;
 }
-#back p{
+
+#back p {
     margin-bottom: 9px;
 }
 
 @media (max-width: 526px) {
+    #table {
+        padding: 0;
+    }
 
-    li{
+    #table p {
+        font-size: 13px;
+    }
+
+    li {
         display: flex;
         flex-direction: column;
         margin-bottom: 12px;
-    }
-    #table p{
-        font-size: 13px;
+
     }
 }
