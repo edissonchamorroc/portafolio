@@ -56,7 +56,7 @@ export class Robot3dComponent implements OnChanges {
 
   cargar3D(scene: THREE.Scene): void {
 
-    this.loader.load(this.path3dDev, function (glb: GLTF) {
+    this.loader.load(this.path3dProd, function (glb: GLTF) {
       const root = glb.scene;
       root.scale.set(0.9, 0.9, 0.9);
       root.castShadow;
