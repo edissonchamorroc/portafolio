@@ -60,9 +60,7 @@ p{
 
 @media (max-width: 770px) {
 
-    #title{
-        flex-direction: column;
-    }
+  
     #title h2 {
         font-size: 30px;
     }
@@ -77,4 +75,11 @@ p{
     #name{
         margin-right: 5px;
     }
+}
+@media (max-width: 540px) {
+
+    #title{
+        flex-direction: column;
+    }
+
 }

@@ -22,6 +22,8 @@ export class Robot3dComponent implements OnChanges {
   private loader = new GLTFLoader();
   private plano?: THREE.PlaneGeometry;
   private material !:THREE.MeshBasicMaterial;
+  private path3dDev:string = '/assets/robot/walle.glb';
+  private path3dProd:string = 'https://edissonchamorroc.github.io/portafolio/assets/robot/walle.glb';
 
   ngOnInit(): void {
 
@@ -61,7 +63,7 @@ export class Robot3dComponent implements OnChanges {
 
   cargar3D(scene: THREE.Scene): void {
 
-    this.loader.load('/assets/robot/walle.glb', function (glb: GLTF) {
+    this.loader.load(this.path3dProd, function (glb: GLTF) {
       const root = glb.scene;
       root.scale.set(0.9, 0.9, 0.9);
       root.castShadow;
