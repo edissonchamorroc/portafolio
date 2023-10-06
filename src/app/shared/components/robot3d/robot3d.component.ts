@@ -11,7 +11,7 @@ import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 export class Robot3dComponent implements OnChanges {
 
   @Input()
-  public backTheme!: boolean;
+  public changeTheme!: boolean;
 
   @ViewChild('rendererContainer') rendererContainer?: ElementRef;
 
@@ -21,8 +21,8 @@ export class Robot3dComponent implements OnChanges {
   private controls : oc.OrbitControls =  new oc.OrbitControls(this.camera, this.renderer.domElement);
   private loader = new GLTFLoader();
   private material !:THREE.MeshBasicMaterial;
-  private path3dDev:string = '/assets/robot/walle.glb';
-  private path3dProd:string = 'https://edissonchamorroc.github.io/portafolio/assets/robot/walle.glb';
+  private path3d:string = './assets/robot/walle.glb';
+  
 
   ngOnInit(): void {
 
@@ -56,7 +56,7 @@ export class Robot3dComponent implements OnChanges {
 
   cargar3D(scene: THREE.Scene): void {
 
-    this.loader.load(this.path3dProd, function (glb: GLTF) {
+    this.loader.load(this.path3d, function (glb: GLTF) {
       const root = glb.scene;
       root.scale.set(0.9, 0.9, 0.9);
       root.castShadow;
@@ -92,13 +92,14 @@ export class Robot3dComponent implements OnChanges {
     const tema_negro: string = '#202023';
     const tema_blanco: string = '#f0e7db';
 
-    if (changes['backTheme'].currentValue) {
-      this.scene.background = new THREE.Color(tema_negro);
-      this.material.color.set(new THREE.Color(tema_negro))
-    }
-    else {
+    if (changes['changeTheme'].currentValue) {
       this.scene.background = new THREE.Color(tema_blanco);
       this.material.color.set(new THREE.Color(tema_blanco))
+    }
+    else {
+      this.scene.background = new THREE.Color(tema_negro);
+      this.material.color.set(new THREE.Color(tema_negro))
+      
     }
 
   }

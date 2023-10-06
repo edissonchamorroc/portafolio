@@ -4,7 +4,7 @@ nav {
     left: 0;
     width: 100%;
     height: 56px;
-    background: rgba(255, 255, 255, 0.25);
+    background: #20202380;
     display: flex;
     justify-content: center;
     z-index: 2;
@@ -102,8 +102,8 @@ p {
 }
 
 /* Estilos para modo noche*/
-.night-theme {
-    background: #20202380 !important;
+.sun-theme {
+    background: rgba(255, 255, 255, 0.25);
 }
 
 /* Estilos para menu hamburguesa*/

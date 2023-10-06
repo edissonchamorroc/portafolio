@@ -10,7 +10,7 @@ export class NavbarComponent {
   @Output()
   public backgroundChange: EventEmitter<string> = new EventEmitter<string>();
 
-  public txtToggle: string = "night-theme";
+  public txtToggle: string = "sun-theme";
 
   public isShowDiv: boolean = false;
 

@@ -12,15 +12,15 @@ export class AppComponent {
 
   constructor( private service: ArticleService){}
 
-  public backTheme:boolean = false;
+  public changeTheme:boolean = false;
 
   backgroundChange($event:string):void{
 
     const element = document.getElementById("main");
 
-    this.backTheme = !this.backTheme;
+    this.changeTheme = !this.changeTheme;
 
-    this.service.setflagBlackTheme(this.backTheme);
+    this.service.setflagBlackTheme(this.changeTheme);
 
     element!.classList.toggle($event);
 
