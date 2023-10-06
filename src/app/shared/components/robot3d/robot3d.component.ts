@@ -20,7 +20,6 @@ export class Robot3dComponent implements OnChanges {
   private camera: THREE.PerspectiveCamera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 10000);
   private controls : oc.OrbitControls =  new oc.OrbitControls(this.camera, this.renderer.domElement);
   private loader = new GLTFLoader();
-  private plano?: THREE.PlaneGeometry;
   private material !:THREE.MeshBasicMaterial;
   private path3dDev:string = '/assets/robot/walle.glb';
   private path3dProd:string = 'https://edissonchamorroc.github.io/portafolio/assets/robot/walle.glb';
@@ -29,7 +28,6 @@ export class Robot3dComponent implements OnChanges {
 
     this.scene.position.set(-0.5, -1, 0)
     this.agregarCamara();
-    this.crearPlano();
     this.cargar3D(this.scene);
     this.agregarLuz();
   }
@@ -42,24 +40,19 @@ export class Robot3dComponent implements OnChanges {
 
   agregarLuz(): void {
 
-    const sol = new THREE.DirectionalLight();
-    sol.position.set(400, 400, 1000);
-    sol.intensity = 2;
-    sol.shadow.camera.visible = true;
-    this.scene.add(sol)
+    const sol1 = new THREE.DirectionalLight();
+    sol1.position.set(100, 200, 2000);
+    sol1.intensity = 3;
+    sol1.shadow.camera.visible = true;
+    this.scene.add(sol1)
+
+    const sol2 = new THREE.DirectionalLight();
+    sol2.position.set(100, 200, -2000);
+    sol2.intensity = 2;
+    this.scene.add(sol2)
   }
 
-  crearPlano(): void {
 
-    this.plano = new THREE.PlaneGeometry(100, 100, 10, 10);
-    this.plano.lookAt(new THREE.Vector3(0, 0.01, 0));
-    this.material= new THREE.MeshBasicMaterial({ color: 0xf0e7db });
-    
-    const territorio = new THREE.Mesh(this.plano, this.material);
-    territorio.receiveShadow = true
-    this.scene.add(territorio);
-
-  }
 
   cargar3D(scene: THREE.Scene): void {
 
