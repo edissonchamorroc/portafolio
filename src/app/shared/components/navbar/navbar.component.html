@@ -29,7 +29,7 @@
 
         <div id="theme-container">
             <div style="display: inline-block; opacity: 1; transform: none;" class="container-button"
-                [hidden]="isShowDiv">
+                [hidden]="!isShowDiv">
                 <button (click)="toggleTheme()" type="button" class="theme-button" aria-label="Toggle theme">
                     <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
                         <path fill="currentColor"
@@ -38,8 +38,8 @@
                     </svg>
                 </button>
             </div>
-            <div style="opacity: 1; transform: none;" class="container-button" [hidden]="!isShowDiv">
-                <button (click)="toggleTheme()" type="button" class="theme-button" aria-label="Toggle theme">
+            <div style="opacity: 1; transform: none;" class="container-button" [hidden]="isShowDiv">
+                <button (click)="toggleTheme()" type="button" class="theme-button" aria-label="Toggle theme" style="background: #FBD38D;">
                     <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
                         <g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none"
                             stroke="currentColor">

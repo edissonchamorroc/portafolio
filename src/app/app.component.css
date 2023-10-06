@@ -16,13 +16,13 @@ body {
 .main {
     width: auto;
     height: auto;
-    background:#f0e7db;
-    
+    background: #202023;
+    color: #EDEDEE;
 }
 
-.night-theme{
-    background: #202023 !important;
-    color: #EDEDEE !important;
+.sun-theme{
+    background:#f0e7db !important;
+    color: #202023 !important;
 }
 
 

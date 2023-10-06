@@ -48,7 +48,8 @@ a {
     text-decoration: none;
 }
 
-#back p {
+#back  {
+    display: none;
     margin-bottom: 9px;
 }
 
@@ -66,5 +67,11 @@ a {
         flex-direction: column;
         margin-bottom: 12px;
 
+    }
+}
+@media (max-width: 400px) {
+
+    #back  {
+        display: inline;
     }
 }

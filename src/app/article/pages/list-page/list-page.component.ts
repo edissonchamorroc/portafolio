@@ -14,9 +14,10 @@ export class ListPageComponent implements OnInit {
   public works: work[] = this.articleService.getWorks;
 
   ngOnInit(): void {
+
     this.articleService.flagBlackTheme.subscribe((value: boolean) => {
-      if (value) document.getElementById('card')?.setAttribute('style', 'color: #EDEDEE !important;');
-      else document.getElementById('card')?.setAttribute('style', 'color: #212529 !important;'); 
+      if (value) document.getElementById('card')?.setAttribute('style', 'color: #212529 !important;');
+      else document.getElementById('card')?.setAttribute('style', 'color: #EDEDEE !important;');
     }
     );
   }
