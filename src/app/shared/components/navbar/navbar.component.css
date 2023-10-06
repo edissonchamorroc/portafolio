@@ -112,16 +112,20 @@ p {
     display: none;
     
 }
+#hamburger-menu a{
+    margin: 5% 0;
+    color: #202023;
+}
 .show{
+
     display: flex !important;
     flex-direction: column;
     position: absolute;
     right: 10px;
     top: 60px;
     width: 200px;
-    padding-left: 12%;
-    
-    background: rgba(255, 255, 255, 0.705);
+    padding: 5%;
+    background: rgba(255, 255, 255, 0.849);
     border-radius: 10px;
 }
 
