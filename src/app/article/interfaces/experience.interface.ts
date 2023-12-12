@@ -1,5 +1,6 @@
 
 export interface experience{
     year:string;
-    description:string;
+    title:string;
+    description?:string;
 }

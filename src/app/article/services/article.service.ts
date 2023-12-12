@@ -90,10 +90,11 @@ export class ArticleService {
     ]
 
     private experiences: experience[] = [
-        { year: 'ene/2023 - Actualmente', description: 'Tuya Vulnerabilidades' },
-        { year: 'abr/2023 - sep/2023', description: 'Desarrollador Fullstack - Freelance' },
-        { year: 'feb/2022 - ene/2023', description: 'Tuya Web' },
-        { year: 'oct/2021 - feb/2022', description: 'Bootcamp fullstack- Sophos Solutions' },
+        {
+            year: 'ene/2023 - Actualmente', title: 'Tuya Vulnerabilidades' },
+        { year: 'abr/2023 - sep/2023', title: 'Desarrollador Fullstack - Freelance' },
+        { year: 'feb/2022 - ene/2023', title: 'Tuya Web', description: '' },
+        { year: 'oct/2021 - feb/2022', title: 'Bootcamp fullstack- Sophos Solutions'},
 
     ];
 
