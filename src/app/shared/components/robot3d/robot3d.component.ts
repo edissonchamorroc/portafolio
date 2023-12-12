@@ -26,7 +26,7 @@ export class Robot3dComponent implements OnChanges {
 
   ngOnInit(): void {
 
-    this.scene.position.set(-0.5, -1, 0)
+    this.scene.position.set(0, -1, -1)
     this.agregarCamara();
     this.cargar3D(this.scene);
     this.agregarLuz();
@@ -35,20 +35,20 @@ export class Robot3dComponent implements OnChanges {
   agregarCamara(): void {
 
     this.camera.position.z = 100;
-    this.camera.position.set(0, 3, 6)
+    this.camera.position.set(0, 2, 7)
   }
 
   agregarLuz(): void {
 
     const sol1 = new THREE.DirectionalLight();
-    sol1.position.set(100, 200, 2000);
+    sol1.position.set(100, 200, 200);
     sol1.intensity = 3;
     sol1.shadow.camera.visible = true;
     this.scene.add(sol1)
 
     const sol2 = new THREE.DirectionalLight();
-    sol2.position.set(100, 200, -2000);
-    sol2.intensity = 2;
+    sol2.position.set(100, 200, -200);
+    sol2.intensity = 3;
     this.scene.add(sol2)
   }
 
@@ -59,7 +59,7 @@ export class Robot3dComponent implements OnChanges {
     this.loader.load(this.path3d, function (glb: GLTF) {
       const root = glb.scene;
       root.scale.set(0.9, 0.9, 0.9);
-      root.castShadow;
+  
       scene.add(root)
     })
   }
