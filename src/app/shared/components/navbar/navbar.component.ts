@@ -33,4 +33,6 @@ export class NavbarComponent {
     element!.classList.toggle("show");
 
   }
+
+  
 }

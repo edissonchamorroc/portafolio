@@ -12,6 +12,20 @@ export class ArticleService {
 
     private works: work[] = [
         {
+            id: 'coe-ingenieria',
+            name: 'CoE Ingeniería',
+            desc: 'Trabajo en la optimización de procesos y desarrollo de talento. Implementé mejoras en calidad funcional y automatización, lideré la actualización de herramientas y tecnologías, y desarrollé dentro de los pipelines detección de dependencias no autorizadas bajo el stack definido en la compañia. Además, proporcioné orientación a aprendices, brindé soporte en configuración de IDE VSCode y resolví errores en código de automatización. Mi enfoque ha sido siempre la eficiencia y la excelencia operativa, contribuyendo al éxito del equipo y el cumplimiento de objetivos.',
+            stack: 'Java/Azure/Bizagi/VSCode/JUnit/Selenium/Serenity',
+            plataformas: 'Windows/macOS/Linux/iOS/Android'
+        },
+        {
+            id: 'vulnerabilidades',
+            name: 'Vulnerabilidades',
+            desc: 'Como parte de un equipo compuesto por desarrolladores, estamos con la meta de identificar y atacar las vulnerabilidades. por medio de código, que se presenten en las diferentes Apis o Aplicativos Web que la compania gestione. Se ha logrado, hasta el momento, mejora de la seguridad de los aplicativos de portal transaccional de la compañía, reduciendo hasta un 90% las vulnerabilidades identificadas',
+            stack: '.NET/C#/Java/Azure/JUnit/Serenity',
+            plataformas: 'Windows/macOS/Linux/iOS/Android'
+        },
+        {
             id: 'reposteria',
             name: 'Dalia Carvajal Repostería',
             desc: 'Trabajé en proyecto freelance para cliente el cual deseaba desarrollar una página web con un presupuesto limitado, por tanto planté y ejecuté la solución más optima para materealizar sus ideas.',
@@ -37,13 +51,7 @@ export class ArticleService {
             stack: 'Drupal/PHP/JavaScript/Sass/JUnit/Serenity',
             plataformas: 'Windows/macOS/Linux/iOS/Android'
         },
-        {
-            id: 'vulnerabilidades',
-            name: 'Vulnerabilidades',
-            desc: 'Como parte de un equipo compuesto por desarrolladores, estamos con la meta de identificar y atacar las vulnerabilidades. por medio de código, que se presenten en las diferentes Apis o Aplicativos Web que la compania gestione. Se ha logrado, hasta el momento, mejora de la seguridad de los aplicativos de portal transaccional de la compañía, reduciendo hasta un 90% las vulnerabilidades identificadas',
-            stack: '.NET/C#/Java/Azure/JUnit/Serenity',
-            plataformas: 'Windows/macOS/Linux/iOS/Android'
-        },
+        
         {
             id: 'Contabilidad',
             name: 'Contabilidad',
@@ -87,14 +95,14 @@ export class ArticleService {
             stack: 'C++/QTGraphics',
             plataformas: 'Windows/macOS/Linux'
         },
+       
     ]
 
     private experiences: experience[] = [
-        {
-            year: 'ene/2023 - Actualmente', title: 'Tuya Vulnerabilidades' },
-        { year: 'abr/2023 - sep/2023', title: 'Desarrollador Fullstack - Freelance' },
-        { year: 'feb/2022 - ene/2023', title: 'Tuya Web', description: '' },
-        { year: 'oct/2021 - feb/2022', title: 'Bootcamp fullstack- Sophos Solutions'},
+        { year: '10/2023 - Actualmente', title: 'Tuya CoE Ingeniería' },
+        { year: '01/2023 - Actualmente', title: 'Tuya Vulnerabilidades' },
+        { year: '02/2022 - 01/2023', title: 'Tuya Web' },
+        { year: '10/2021 - 02/2022', title: 'Bootcamp Backend - Sophos Solutions' },
 
     ];
 
