@@ -14,7 +14,7 @@ export class ArticleService {
         {
             id: 'coe-ingenieria',
             name: 'CoE Ingeniería',
-            desc: 'Trabajo en la optimización de procesos y desarrollo de talento. Implementé mejoras en calidad funcional y automatización, lideré la actualización de herramientas y tecnologías, y desarrollé dentro de los pipelines detección de dependencias no autorizadas bajo el stack definido en la compañia. Además, proporcioné orientación a aprendices, brindé soporte en configuración de IDE VSCode y resolví errores en código de automatización. Mi enfoque ha sido siempre la eficiencia y la excelencia operativa, contribuyendo al éxito del equipo y el cumplimiento de objetivos.',
+            desc: 'Trabajo en la optimización de procesos y desarrollo de talento. Apoye en la implementación de mejoras en calidad funcional y automatización por medio de la actualización de herramientas y tecnologías. Además, brindo soporte en desarrollo de automatización. Mi enfoque ha sido siempre la eficiencia y la excelencia operativa, contribuyendo al éxito del equipo y el cumplimiento de objetivos.',
             stack: 'Java/Azure/Bizagi/VSCode/JUnit/Selenium/Serenity',
             plataformas: 'Windows/macOS/Linux/iOS/Android'
         },
@@ -25,15 +25,15 @@ export class ArticleService {
             stack: '.NET/C#/Java/Azure/JUnit/Serenity',
             plataformas: 'Windows/macOS/Linux/iOS/Android'
         },
-        {
-            id: 'reposteria',
-            name: 'Dalia Carvajal Repostería',
-            desc: 'Trabajé en proyecto freelance para cliente el cual deseaba desarrollar una página web con un presupuesto limitado, por tanto planté y ejecuté la solución más optima para materealizar sus ideas.',
-            url: 'https://daliareposteriapasteleria.github.io/paginaweb/',
-            stack: 'Angular_V16/JavaScript/CSS',
-            plataformas: 'Windows/macOS/Linux/iOS/Android'
+        // {
+        //     id: 'reposteria',
+        //     name: 'Dalia Carvajal Repostería',
+        //     desc: 'Trabajé en proyecto freelance para cliente el cual deseaba desarrollar una página web con un presupuesto limitado, por tanto planté y ejecuté la solución más optima para materealizar sus ideas.',
+        //     url: 'https://daliareposteriapasteleria.github.io/paginaweb/',
+        //     stack: 'Angular_V16/JavaScript/CSS',
+        //     plataformas: 'Windows/macOS/Linux/iOS/Android'
 
-        },
+        // },
         {
             id: 'seguros',
             name: 'Seguros y asistencias',
