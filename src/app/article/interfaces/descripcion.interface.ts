@@ -1,6 +1,6 @@
 
 export interface Descripcion{
-    nombre:string;
-    profesion:string;
-    sobreMi:string;
+    name:string;
+    profession:string;
+    aboutMe:string;
 }
