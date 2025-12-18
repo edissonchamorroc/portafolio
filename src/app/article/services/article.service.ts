@@ -15,6 +15,7 @@ export class ArticleService {
             id: 'cobranza-digital',
             name: 'Cobranza digital',
             desc: 'I had been working in Portal de Soluciones web',
+            url:'https://servicios.tuya.com.co/portalsoluciones/',
             stack: 'Java/Azure/Bizagi/VSCode/JUnit/Selenium/Serenity',
             plataformas: 'Windows/macOS/Linux/iOS/Android'
         },
